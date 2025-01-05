@@ -89,7 +89,7 @@ body{
     text-align: start;
     white-space: nowrap;
 } 
-/* ------------------- curve outside----------------------- */
+/* ------------------------------------------- curve outside ------------------------------------------ */
 
 .navigation ul li:hover a::before{
     content: '';
@@ -117,7 +117,7 @@ body{
     box-shadow: 35px -35px 0 10px var(--white);
 }
 
-/* ---------------- main -------------------- */
+/* ---------------------------------------------------- main ---------------------------------------------------- */
 
 .main{
     position: absolute;
@@ -193,13 +193,13 @@ body{
     object-fit: cover;
 }
 
-/* ------------------card------------------------ */
+/* --------------------------------------------------------------card--------------------------------------------------- */
  .cardBox{
     position: relative;
     width: 100%;
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4 , 1fr);
     grid-gap: 30px;
  }
  .cardBox .card{
@@ -238,4 +238,77 @@ body{
  .cardBox .card:hover .cardName,
  .cardBox .card:hover .iconBox{
     color: var(--white);
+ }
+
+ /* --------------------------------------------------- order detail list------------------------------------------------------ */
+
+ .details{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+ }
+
+ .details .recentorder{
+    position: relative;
+    background: var(--white);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    min-height: 500px;
+    display: grid;
+    padding: 20px;
+    border-radius: 20px;
+ }
+ .details .cardheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+ }
+ .cardheader h2{
+    font-weight: 600;
+    color: var(--blue);
+ }
+ .cardheader .btn{
+    position: relative;
+    padding: 5px 10px;
+    border-radius: 6px;
+    background: var(--blue);
+    color: var(--white);
+    text-decoration: none;
+ }
+ .details table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+ }
+ .details table thead td{
+    font-weight: 600;
+ }
+ .details .recentorder table tr td{
+    color: var(--black1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+ }
+ .details .recentorder table tr{
+    color: var(--black1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+ }
+ .details .recentorder table tr:last-child{
+    border-bottom: none;
+ }
+ .details .recentorder table tbody tr:hover{
+    background: var(--blue);
+    color: var(--white);
+ }
+ .details .recentorder table tr td{
+    padding: 10px;
+ }
+ .details .recentorder table tr td:last-child{
+    text-align: end;
+ }
+ .details .recentorder table tr td:nth-child(2){
+    text-align: end;
+ }
+ .details .recentorder table tr td:nth-child(3){
+    text-align: end;
  }
